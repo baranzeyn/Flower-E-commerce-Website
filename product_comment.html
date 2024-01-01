@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower E-Commerce Website</title>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+
+<body>
+
+    <!-- header section starts -->
+
+    <header>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="index.html" class="logo">flower<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="products.html">all flowers</a>
+            <a href="contact.html">contact us</a>
+        </nav>
+
+        <div class="icons">
+            <a href="payment.html" class="fa-solid fa-wallet"></i></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+            <a href="login.html" class="fa fa-user"></a>
+        </div>
+
+    </header>
+    <!-- header section ends -->
+
+    
+    <!-- product info section starts -->
+    <section class="product-info" style="margin-top: 7rem;">
+        <h1 class="heading">Product <span>Info</span></h1>
+        <p style="font-size: 2.5rem;">Flower bouquet</p>
+        <div class="details" style="display: flex; align-items: center;">
+
+            <div class="image" style="flex-shrink: 0; margin-right: 20px;">
+                <img src="images/1.jpeg" alt="">
+            </div>
+            <div class="text">
+
+                <div class="basic-details" style="display: block;">
+                    <h3>Stock</h3>
+                    <p>25</p>
+                    <h3>Average delivery time of the product</h3>
+                    <p>5 Days</p>
+                    <h3>Description</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo fugit porro repellat quas
+                        magni numquam quos odit natus commodi rerum.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- product info section ends -->
+
+
+    <!-- comment section starts -->
+    <section class="comments" id="comments" >
+        <h1 class="heading"><span>Comments</span></h1>
+
+        <div class="review-section">
+            <div class="row">
+                <div class="col-md">
+                    <div id="commentsContainer"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <form class="comment-form">
+                        <textarea class="box" id="commentInput" placeholder="Write your comment..." cols="30"
+                            rows="10"></textarea>
+                        <button type="button" onclick="addComment()" class="btn">Add Comment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </section>
+
+
+
+    <!-- comment setion ends -->
+
+    <!-- footer section starts -->
+
+    <section class="footer" id="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="products.html">products</a>
+                <a href="contact.html">contact</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="account.html">account</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+123-456-7890</a>
+                <a href="mailto:baranzeyn226@gmail.com">baranzeyn226@gmail.com</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer section ends -->

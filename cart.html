@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- kullanıcı bakiye yükledikten sonra ödeme yapabilecek -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header section starts -->
+    <header>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="index.html" class="logo">flower<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="products.html">all flowers</a>
+            <a href="contact.html">contact us</a>
+        </nav>
+
+        <div class="icons">
+            <a href="payment.html" class="fa-solid fa-wallet"></i></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+            <a href="login.html" class="fa fa-user"></a>
+        </div>
+
+    </header>
+    <!-- header section ends -->
+    
+
+    <!-- cart section starts -->
+    <section class="cart" id="cart" style="margin-top: 10rem;">
+        <h1 class="heading">shopping <span>cart</span></h1>
+
+        <div class="box-container" id="cart-items">
+            <!-- Cart items will be displayed here dynamically using JavaScript -->
+        </div>
+
+        <div class="total">
+            <h3>total: <span id="total-amount">0TL</span></h3>
+            <a href="#" class="btn">checkout</a>
+        </div>
+    </section>
+    <!-- cart section ends -->
+
+     <!-- footer section starts -->
+
+     <section class="footer" id="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="products.html">products</a>
+                <a href="contact.html">contact</a>
+            </div>
+            
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="account.html">account</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+123-456-7890</a>
+                <a href="mailto:baranzeyn226@gmail.com">baranzeyn226@gmail.com</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer section ends -->
+
+</body>
+
+</html>

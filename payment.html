@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- kullanıcı giriş yaptıktan sonra bakiye yükleyebilecek -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakiye Yükleme</title>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts -->
+    <header>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="index.html" class="logo">flower<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="products.html">all flowers</a>
+            <a href="contact.html">contact us</a>
+        </nav>
+
+        <div class="icons">
+            <a href="payment.html" class="fa-solid fa-wallet"></i></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+            <a href="login.html" class="fa fa-user"></a>
+        </div>
+
+    </header>
+    <!-- header section ends -->
+
+
+    <!-- reload balance section starts -->
+
+    <section class="balance" id="balance" style="margin-top: 7rem;">
+        <h1 class="heading">reload <span> balance</span></h1>
+
+        <div class="row">
+            <form action="" id="paymentForm" onsubmit="return validateForm()">
+                <span style="font-size: 2rem;">Amount to be Loaded (TRY):</span>
+                <input type="number" placeholder="Card Number" minlength="16" maxlength="16" id="cardNumber" class="box" required>
+                <input type="month" id="expirationDate" name="expirationDate" class="box" required>
+                <input type="number" placeholder="CVC" minlength="3" maxlength="3" id="cvc" class="box" required>
+                <input type="number" placeholder="Balance" min="1" id="balance" class="box" required>
+                <input type="submit" value="reload balance" class="btn">
+            </form>
+        </div>
+    </section>
+    <!-- reload balance  section ends -->
+
+
+     <!-- footer section starts -->
+
+     <section class="footer" id="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="products.html">products</a>
+                <a href="contact.html">contact</a>
+            </div>
+            
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="account.html">account</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+123-456-7890</a>
+                <a href="mailto:baranzeyn226@gmail.com">baranzeyn226@gmail.com</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- payment input control -->
+    <script>
+        function validateForm() {
+            
+            var cardNumber = document.getElementById('cardNumber').value;
+            var expirationDate = document.getElementById('expirationDate').value;
+            var cvc = document.getElementById('cvc').value;
+            var balance = document.getElementById('balance').value;
+
+            if (cardNumber.length !== 16 || isNaN(cardNumber) || expirationDate === '' || cvc.length !== 3 || isNaN(cvc) || isNaN(balance) || balance < 1) {
+                alert('Lütfen geçerli bilgileri girin.');
+                return false;
+            }
+
+            // Formu sunucuya gönderme veya başka işlemler burada yapılabilir.
+
+            return true;
+        }
+    </script>
+    
+
+    
+</body>
+
+</html>
