@@ -1,0 +1,10 @@
+USE flower_e_commerce;
+-- Mesajlar (Messages) tablosu
+CREATE TABLE Messages (
+    MessageID INT PRIMARY KEY AUTO_INCREMENT,
+    SenderName VARCHAR(50) CHARACTER SET utf8mb4 NOT NULL,
+    SenderEmail VARCHAR(100) CHARACTER SET utf8mb4 NOT NULL,
+    SenderNumber VARCHAR(20) CHARACTER SET utf8mb4 NOT NULL,
+    MessageText VARCHAR(1000) CHARACTER SET utf8mb4 NOT NULL,
+    Timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+) CHARACTER SET utf8mb4;
